@@ -8,7 +8,7 @@ function Resume() {
         <div className="resume-container">
             <header className="resume-header">
                 <h1>Arian Khadem</h1>
-                <p>Full Stack Developer | Age: 17</p>
+                <p>Developer | Age: 17</p>
                 <p>Contact: ariankhadem4@gmail.com</p>
             </header>
 
