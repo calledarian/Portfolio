@@ -7,7 +7,7 @@ export default function Portfolio() {
         <div>
             <header className="header">
                 <div className="header-content">
-                    <h1 className="logo">Sowtware Developer</h1>
+                    <h1 className="logo">Developer</h1>
                     <p className="date-text">
                         {new Date().getFullYear()} / {new Date().getMonth() + 1} / {new Date().getDate()}
                     </p>
@@ -20,7 +20,7 @@ export default function Portfolio() {
                         <img src="./arianInSuit.jpg" alt="Profile" />
                     </div>
                     <h1 className="hero-title">Arian Khadem</h1>
-                    <p className="hero-subtitle">Full-Stack Developer passionate about creating innovative solutions with modern technologies.</p>
+                    <p className="hero-subtitle">A developer passionate about creating innovative solutions with modern technologies.</p>
                     <div className="hero-buttons">
                         <Link to="/resume" className="button primary-button">
                             My Resume
