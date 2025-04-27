@@ -56,7 +56,7 @@ export default function Projects() {
                             <img src="./bookshell.png" alt="Library Project" />
                         </div>
                         <div className="project-details">
-                            <h3 className="project-title">Christadelphian Sustainability Farm</h3>
+                            <h3 className="project-title">Book Library Management</h3>
                             <p className="project-description">
                                 A small library website that you can Creat, Read, Update, Delete books from it. 
                             </p>
@@ -66,8 +66,8 @@ export default function Projects() {
                                 <span className="project-tag">JavaScript/TypeScript</span>
                             </div>
                             <div className="project-links">
-                                <a href="https://github.com/calledarian/farm" className="project-link">Code</a>
-                                <a href="https://christadelphiancambodia.netlify.app/" className="project-link">Live Demo</a>
+                                <a href="https://github.com/calledarian/library" className="project-link">Code</a>
+                                <div className="project-link">Not Live</div>
                             </div>
                         </div>
                     </div>
