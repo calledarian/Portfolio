@@ -14,7 +14,7 @@ export default function Contact() {
                         <a href="https://github.com/calledarian" className="contact-link" target="_blank" rel="noopener noreferrer">
                             <FaGithub className="icon" />
                         </a>
-                        <a href="https://www.linkedin.com/in/arian-khademolghorani-969b78350/" className="contact-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/ariankhadem" className="contact-link" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className="icon" />
                         </a>
                     </div>
