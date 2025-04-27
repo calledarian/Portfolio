@@ -56,13 +56,14 @@ export default function Projects() {
                             <img src="./bookshell.png" alt="Library Project" />
                         </div>
                         <div className="project-details">
-                            <h3 className="project-title">Book Library Management</h3>
+                            <h3 className="project-title">Library Book Management</h3>
                             <p className="project-description">
                                 A small library website that you can Creat, Read, Update, Delete books from it. 
                             </p>
                             <div className="project-tags">
                                 <span className="project-tag">NestJS</span>
                                 <span className="project-tag">Reactjs</span>
+                                <span className="project-tag">PostgreSQL</span>
                                 <span className="project-tag">JavaScript/TypeScript</span>
                             </div>
                             <div className="project-links">
