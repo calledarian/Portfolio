@@ -12,7 +12,7 @@ export default function Projects() {
                         <div className="project-details">
                             <h3 className="project-title">Bible Educatin Center</h3>
                             <p className="project-description">
-                                A fullstack web app for Cambodia Bible Education Center to check their study programs, access contact info, view photo galleries, get FAQs, and support the community through donations.
+                                A fullstack website for Cambodia Bible Education Center with secure admin panel and dashboard to controller posts on the page.
                             </p>
                             <div className="project-tags">
                                 <span className="project-tag">React</span>
