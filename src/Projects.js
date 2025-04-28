@@ -10,7 +10,7 @@ export default function Projects() {
                             <img src="./bec.png" alt="Project thumbnail" />
                         </div>
                         <div className="project-details">
-                            <h3 className="project-title">Bible Educatin Center</h3>
+                            <h3 className="project-title">Bible Education Center</h3>
                             <p className="project-description">
                                 A fullstack website for Cambodia Bible Education Center with secure admin panel and dashboard to controller posts on the page.
                             </p>
@@ -58,7 +58,7 @@ export default function Projects() {
                         <div className="project-details">
                             <h3 className="project-title">Library Book Management</h3>
                             <p className="project-description">
-                                A small library website that you can Creat, Read, Update, Delete books from it. 
+                                A small library website that you can Creat, Read, Update, Delete books from it.
                             </p>
                             <div className="project-tags">
                                 <span className="project-tag">NestJS</span>

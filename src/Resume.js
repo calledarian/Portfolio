@@ -18,8 +18,8 @@ function Resume() {
                     <h3>Freelance Developer</h3>
                     <p>Dec 2024 - Present</p>
                     <ul>
-                        <li>Developed websites and apps for clients in various industries.</li>
-                        <li>Built interactive web applications with React, NestJS, and MySQL.</li>
+                        <li>Developed full-stack websites for clients in various industries.</li>
+                        <li>Built interactive web applications with React, NestJS, and PostgreSQL.</li>
                         <li>Ensured responsive design and user-friendly interfaces.</li>
                     </ul>
                 </div>
@@ -32,6 +32,18 @@ function Resume() {
                     <li>HTML, CSS</li>
                     <li>MySQL, PostgreSQL</li>
                     <li>Version Control (Git)</li>
+                </ul>
+                <h2>Languages</h2>
+                <ul>
+                    <li>
+                        English
+                    </li>
+                    <li>
+                        Turkish
+                    </li>
+                    <li>
+                        Persian
+                    </li>
                 </ul>
             </section>
             <footer className="resume-footer">
