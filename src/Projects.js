@@ -22,8 +22,8 @@ export default function Projects() {
 
                             </div>
                             <div className="project-links">
-                                <a href="https://github.com/calledarian/my-ecclesia-website" className="project-link">Code</a>
-                                <a href="https://bibleec.vercel.app/" className="project-link">Live Demo</a>
+                                <a href="https://github.com/calledarian/my-ecclesia-website" target="blank" className="project-link">Code</a>
+                                <a href="https://bibleec.vercel.app/" target="blank" className="project-link">Live Demo</a>
                             </div>
                         </div>
 
@@ -45,8 +45,8 @@ export default function Projects() {
                                 <span className="project-tag">JavaScript</span>
                             </div>
                             <div className="project-links">
-                                <a href="https://github.com/calledarian/farm" className="project-link">Code</a>
-                                <a href="https://christadelphiancambodia.netlify.app/" className="project-link">Live Demo</a>
+                                <a href="https://github.com/calledarian/farm" target="blank" className="project-link">Code</a>
+                                <a href="https://christadelphiancambodia.netlify.app/" target="blank" className="project-link">Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ export default function Projects() {
                                 <span className="project-tag">JavaScript/TypeScript</span>
                             </div>
                             <div className="project-links">
-                                <a href="https://github.com/calledarian/library" className="project-link">Code</a>
+                                <a href="https://github.com/calledarian/library" target="blank" className="project-link">Code</a>
                                 <div className="project-link">Not Live</div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ export default function Projects() {
 
                     <div className="project-card">
                         <div className="project-image">
-                            <img src="./norph.jpg" alt="Project thumbnail" />
+                            <img src="./norph.png" alt="Project thumbnail" />
                         </div>
                         <div className="project-details">
                             <h3 className="project-title">Norphealey Cafe Shop</h3>
@@ -88,8 +88,8 @@ export default function Projects() {
 
                             </div>
                             <div className="project-links">
-                                <a href="https://github.com/calledarian/norph" className="project-link">Code</a>
-                                <a href="https://norphealey.vercel.app/ className="project-link">Live Demo</a>
+                                <a href="https://github.com/calledarian/norph" target="blank" className="project-link">Code</a>
+                                <a href="https://norphealey.vercel.app/" target="blank" className="project-link">Live Demo</a>
                             </div>
                         </div>
 
@@ -98,6 +98,6 @@ export default function Projects() {
 
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
