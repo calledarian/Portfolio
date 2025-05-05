@@ -73,6 +73,29 @@ export default function Projects() {
                         </div>
                     </div>
 
+                    <div className="project-card">
+                        <div className="project-image">
+                            <img src="./norph.png" alt="Project thumbnail" />
+                        </div>
+                        <div className="project-details">
+                            <h3 className="project-title">Norphealey Cafe Shop</h3>
+                            <p className="project-description">
+                                A dynamic react created website for a local cafe shop in phenom penh.
+                            </p>
+                            <div className="project-tags">
+                                <span className="project-tag">React</span>
+                                <span className="project-tag">JavaScript</span>
+
+                            </div>
+                            <div className="project-links">
+                                <a href="https://github.com/calledarian/norph" className="project-link">Code</a>
+                                <a href="https://norphealey.vercel.app/ className="project-link">Live Demo</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
             </div>
         </section>
