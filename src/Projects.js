@@ -75,7 +75,7 @@ export default function Projects() {
 
                     <div className="project-card">
                         <div className="project-image">
-                            <img src="./norph.png" alt="Project thumbnail" />
+                            <img src="./norph.jpg" alt="Project thumbnail" />
                         </div>
                         <div className="project-details">
                             <h3 className="project-title">Norphealey Cafe Shop</h3>
