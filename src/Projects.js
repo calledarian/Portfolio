@@ -86,6 +86,7 @@ export default function Projects() {
                                 <span className="project-tag">React</span>
                                 <span className="project-tag">JavaScript</span>
 
+
                             </div>
                             <div className="project-links">
                                 <a href="https://github.com/calledarian/norph" target="blank" className="project-link">Code</a>
