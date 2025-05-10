@@ -1,90 +1,249 @@
-/* Resume.css */
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f6f8;
+  font-size: 15px;
+}
+
+a {
+  color: #2c5282;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 .resume-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
-  
-  .resume-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .resume-header h1 {
-    font-size: 36px;
-    font-weight: bold;
-  }
-  
-  .resume-header p {
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .resume-section {
-    margin-bottom: 30px;
-  }
-  
-  .resume-section h2 {
-    font-size: 28px;
-    color: #333;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .experience, .education {
-    margin-bottom: 20px;
-  }
-  
-  .experience h3, .education h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .experience ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .experience li {
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    padding-left: 20px;
-  }
-  
-  ul li {
-    font-size: 16px;
-    color: #444;
-  }
-  
-  .resume-header p, .resume-section p {
-    font-size: 16px;
-    color: #777;
-  }
-  
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Wrapper */
+.print-wrapper {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  min-height: 1123px;
+  border-radius: 6px;
+}
+
+/* Header */
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.resume-header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c5282;
+}
+
+.resume-header .title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #555;
+  margin: 8px 0 10px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Main Layout */
+.resume-main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.resume-section {
+  margin-bottom: 10px;
+}
+
+.resume-section h2 {
+  font-size: 18px;
+  color: #2c5282;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+/* Experience Items */
+.experience-item {
+  margin-bottom: 20px;
+  page-break-inside: avoid;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.experience-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.experience-header .date {
+  font-size: 13px;
+  color: #666;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.experience-item li {
+  margin-bottom: 6px;
+}
+
+/* Two-Column Sections */
+.columns-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.columns-container .resume-section {
+  flex: 1;
+}
+
+.tech-list,
+.language-list {
+  padding-left: 20px;
+}
+
+.tech-list li,
+.language-list li {
+  margin-bottom: 6px;
+}
+
+/* Footer (Browser only) */
 .resume-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.back-home {
+  font-weight: 500;
+}
+
+.download-button {
+  background-color: #2c5282;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.download-button:hover {
+  background-color: #1a365d;
+}
+
+/* Print-only Footer Note */
+.print-only {
+  display: none;
+  font-size: 10pt;
+  text-align: right;
+  color: #888;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: #fff;
+    font-size: 12pt;
+  }
+
+  .resume-container,
+  .print-wrapper {
+    padding: 0;
+    box-shadow: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  .resume-section h2 {
+    font-size: 14pt;
+  }
+
+  .experience-header h3,
+  .experience-header .date,
+  .tech-list li,
+  .language-list li {
+    font-size: 11pt;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
     text-align: center;
-    margin-top: 30px;
-    font-size: 16px;
-    color: #555;
-}
+    gap: 6px;
+  }
 
-.resume-footer .download-button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 14px;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-left: 10px;
-}
+  .experience-header {
+    flex-direction: column;
+    gap: 4px;
+  }
 
-    .resume-footer .download-button:hover {
-        background-color: #0056b3;
-    }
+  .columns-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .resume-footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
