@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
     return (
-        <div>
+        <div id='portfolioo'>
             <header className="header">
                 <div className="header-content">
                     <h1 className="logo">Developer</h1>
@@ -20,7 +20,7 @@ export default function Portfolio() {
                         <img src="./MArian2.png" alt="Profile" />
                     </div>
                     <h1 className="hero-title">Arian Khadem</h1>
-                    <p className="hero-subtitle">A developer passionate about creating innovative solutions with modern technologies.</p>
+                    <p className="hero-subtitle">A developer who’s here to build friendly, reliable websites for real people.</p>
                     <div className="hero-buttons">
                         <Link to="/resume" className="button primary-button">
                             My Resume

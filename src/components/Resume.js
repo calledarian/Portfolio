@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Download } from 'lucide-react';
-import './Resume.css';
+import '../Resume.css';
 
 function Resume() {
     const handleDownload = () => {
@@ -72,7 +72,7 @@ function Resume() {
                             <ul className="tech-list">
                                 <li>JavaScript / TypeScript (React, NestJS)</li>
                                 <li>HTML, CSS</li>
-                                <li>MySQL, PostgreSQL</li>
+                                <li>Docker</li>
                             </ul>
                         </section>
 

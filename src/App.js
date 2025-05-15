@@ -1,15 +1,15 @@
 // Portfolio.js
 import React from 'react';
 import './App.css'
-import Portfolio from './Portfolio';
-import About from './About';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contact';
-import Footer from './Footer';
-import Scroll from './Scroll';
+import Portfolio from './components/Portfolio';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Scroll from './components/Scroll';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Resume from './Resume';
+import Resume from './components/Resume';
 
 
 function App() {

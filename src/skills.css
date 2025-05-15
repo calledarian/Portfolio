@@ -1,0 +1,213 @@
+/* Tech Stack Styling with Enhanced Hover Effects */
+
+
+
+/* Base styling for the skills section */
+.skills-section {
+    padding: 5rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Enhanced skill card with hover effects */
+  .skill-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid transparent;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.1);
+  }
+  
+  .skill-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+    font-weight: 600;
+    color: #1f2937;
+    transition: all 0.3s ease;
+  }
+  
+  .skill-card:hover .skill-title {
+    color: #2563eb;
+    border-color: #2563eb;
+  }
+  
+  /* Tech stack list styling */
+  .tech-stack-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual tech item */
+  .tech-item {
+    margin-bottom: 1rem;
+  }
+  
+  /* Tech link styling with hover effects */
+  .tech-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    color: #4b5563;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #f3f4f6;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tech-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(37, 99, 235, 0.05);
+    transition: width 0.3s ease;
+    z-index: 1;
+  }
+  
+  .tech-link:hover {
+    transform: translateX(5px);
+    background-color: #f0f7ff;
+    border-color: rgba(37, 99, 235, 0.3);
+    color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  }
+  
+  .tech-link:hover::before {
+    width: 100%;
+  }
+  
+  .tech-link:active {
+    transform: translateX(5px) scale(0.98);
+  }
+  
+  /* Tech icon styling */
+  .tech-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 12px;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f3f4f6;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .tech-icon i {
+    color: #2563eb;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .tech-link:hover .tech-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.2);
+  }
+  
+  .tech-link:hover .tech-icon i {
+    transform: scale(1.2);
+  }
+  
+  /* Specific icon colors */
+  .fi-brands-javascript {
+    color: #f7df1e !important;
+  }
+  
+  .fi-brands-react {
+    color: #61dafb !important;
+  }
+  
+  .fi-brands-html5 {
+    color: #e34f26 !important;
+  }
+  
+  .fi-brands-nodejs, .fi-brands-nodejs-alt {
+    color: #339933 !important;
+  }
+  
+  .fi-brands-typescript {
+    color: #3178c6 !important;
+  }
+  
+  .fi-brands-github {
+    color: #181717 !important;
+  }
+  
+  .fi-brands-postgresql {
+    color: #4169e1 !important;
+  }
+  
+  .fi-brands-postman {
+    color: #ff6c37 !important;
+  }
+  
+  /* Tech name styling */
+  .tech-name {
+    font-weight: 500;
+    flex: 1;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  
+  .tech-link:hover .tech-name {
+    font-weight: 600;
+  }
+  
+  /* Arrow indicator that appears on hover */
+  .tech-arrow {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    margin-left: 8px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .tech-link:hover .tech-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .tech-link {
+      padding: 10px 12px;
+    }
+    
+    .tech-icon {
+      width: 36px;
+      height: 36px;
+      font-size: 1.3rem;
+    }
+  }
