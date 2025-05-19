@@ -26,11 +26,11 @@ const projectsData = [
         id: 3,
         title: "Library Book Management",
         description:
-            "A CRUD-based library management system to organize and track books with clean admin features.",
+            "A CRUD-based library management system to organize and track books with clean admin features and easy user interface.",
         tags: ["NestJS", "React", "PostgreSQL", "JavaScript/TypeScript"],
-        image: "./bookshell.png",
+        image: "./bookshell3.png",
         codeLink: "https://github.com/calledarian/library",
-        liveDemo: null,
+        liveDemo: "https://bibleec-library.vercel.app/",
     },
     {
         id: 4,
@@ -48,7 +48,7 @@ const projectsData = [
         description:
             "A full-stack youth-focused gospel website with a content management system, video embeds, and blog features.",
         tags: ["React", "TypeScript", "NestJS", "Docker"],
-        image: "./gospelfy.png",
+        image: "./gospel3.png",
         codeLink: "https://github.com/calledarian/GospelForYouths-backend",
         liveDemo: "https://gospelforyouths.vercel.app/",
     },
@@ -101,7 +101,7 @@ export default function Projects() {
                                             Live Demo
                                         </a>
                                     ) : (
-                                        <div className="project-link">Not Live</div>
+                                        <div className="project-link">Live</div>
                                     )}
                                 </div>
                             </div>
