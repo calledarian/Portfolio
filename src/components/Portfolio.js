@@ -20,7 +20,7 @@ export default function Portfolio() {
                         <img src="./MArian2.png" alt="Profile" />
                     </div>
                     <h1 className="hero-title">Arian Khadem</h1>
-                    <p className="hero-subtitle">A developer who’s here to build friendly, reliable websites for real people.</p>
+                    <p className="hero-subtitle">Push, Debug, Checkmate!</p>
                     <div className="hero-buttons">
                         <Link to="/resume" className="button primary-button">
                             My Resume
