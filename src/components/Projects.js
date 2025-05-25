@@ -52,6 +52,16 @@ const projectsData = [
         codeLink: "https://github.com/calledarian/GospelForYouths-backend",
         liveDemo: "https://gospelforyouths.vercel.app/",
     },
+    {
+        id: 6,
+        title: "Tour Booking",
+        description:
+            "Built a full-stack tour booking website using React for the frontend and NestJS for the backend, including user login with JWT, booking form with limits, admin dashboard for managing bookings, image uploads, and basic payment integration.",
+        tags: ["React", "TypeScript", "NestJS", "Docker"],
+        image: "./comingsoon.jpg",
+        codeLink: "",
+        liveDemo: "",
+    },
 ];
 
 
