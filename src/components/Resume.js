@@ -71,7 +71,7 @@ function Resume() {
                             <h2>Tech Stacks</h2>
                             <ul className="tech-list">
                                 <li>JavaScript / TypeScript (React, NestJS)</li>
-                                <li>HTML, CSS</li>
+                                <li>PostgreSQL, Claudinary</li>
                                 <li>Docker</li>
                             </ul>
                         </section>
