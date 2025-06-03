@@ -17,7 +17,7 @@ export default function Portfolio() {
             <section className="hero-section">
                 <div className="hero-content">
                     <div className="profile-image">
-                        <img src="./MArian2.png" alt="Profile" />
+                        <img src="./arianparrot.jpg" alt="Profile" />
                     </div>
                     <h1 className="hero-title">Arian Khadem</h1>
                     <p className="hero-subtitle">Push, Debug, Checkmate!</p>
