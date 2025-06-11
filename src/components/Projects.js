@@ -201,7 +201,7 @@ export default function Projects() {
                             <div className="modal-image-container">
                                 <img
                                     src={modalState.projectImages[modalState.currentImageIndex]}
-                                    alt={`${modalState.projectTitle} - Image ${modalState.currentImageIndex + 1}`}
+                                    alt={`${modalState.projectTitle} - ${modalState.currentImageIndex + 1}`}
                                     className="modal-image"
                                 />
 
