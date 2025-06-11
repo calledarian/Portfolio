@@ -6,13 +6,13 @@ export default function About() {
                 <h2 className="section-title">About Me</h2>
                 <div className="about-content">
                     <p>
-                        Hey there! I'm a freelance developer who loves building full-stack web apps that are clean, functional, and actually solve problems. From the front end to the back, I enjoy bringing ideas to life through code.
+                        I am a full-stack developer specializing in building clean, functional web applications that solve real-world problems. I architect and build solutions from front to back, focusing on scalable backend logic and intuitive user experiences.
                     </p>
                     <p>
-                        Right now, I’m looking for junior developer roles where I can grow, collaborate with a great team, and keep leveling up my skills with React, NestJS, TypeScript, and SQL databases.
+                        I am actively seeking a junior developer role where I can contribute my skills in React, NestJS, and PostgreSQL to a collaborative team. I am eager to tackle new challenges and contribute to building high-quality, impactful products.
                     </p>
                     <p>
-                        Outside of coding, I’m probably jamming on my guitar, lifting at the gym, or trying to outthink someone in chess.
+                        Outside of coding, I enjoy playing guitar, weightlifting at the gym, and the strategic challenge of a good game of chess.
                     </p>
                 </div>
             </div>

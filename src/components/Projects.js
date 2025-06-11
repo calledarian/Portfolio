@@ -6,8 +6,8 @@ const projectsData = [
         id: 1,
         title: "Bible Education Center",
         description:
-            "A full-stack educational platform designed for BEC. Includes a secure admin dashboard to manage events. Built with modern technologies for performance and scalability.",
-        tags: ["React", "NestJS", "PostgreSQL", "Claudinary", "JavaScript/TypeScript"],
+            "Developed a full-stack educational platform to serve as a high-performance, centralized hub for BEC's activities. The application empowers administrators to seamlessly manage events and content through a secure dashboard, enhancing the organization's outreach and user engagement.",
+        tags: ["React", "NestJS", "PostgreSQL", "Cloudinary", "JavaScript/TypeScript"],
         images: ["./bec.png", "./bec28.png"],
         codeLink: "https://github.com/calledarian/my-ecclesia-website",
         liveDemo: "https://bibleec.vercel.app/",
@@ -16,7 +16,7 @@ const projectsData = [
         id: 2,
         title: "Christadelphian Sustainability Farm",
         description:
-            "A clean and responsive website built for a sustainable farm in Cambodia. Highlights their mission, products, and contact details in a user-friendly layout.",
+            "Crafted a clean, responsive website to establish the farm's online presence in Cambodia. The user-friendly layout effectively communicates their mission and showcases local products, helping to attract community interest and support for their sustainability initiatives.",
         tags: ["HTML5", "CSS3", "JavaScript"],
         images: ["./farm.png", "./farm28.png", "./farm29.png", "./farm30.png"],
         codeLink: "https://github.com/calledarian/farm",
@@ -26,7 +26,7 @@ const projectsData = [
         id: 3,
         title: "Library Book Management",
         description:
-            "A CRUD-based web app to organize, track, and manage a personal or small-scale library. Includes admin features for adding, editing, and removing books with a clean and intuitive UI.",
+            "Streamlined personal book cataloging with a full-stack CRUD application. This tool enables users to effortlessly add, track, update, and manage titles in their collection, featuring a clean and intuitive UI designed for efficient organization and quick access.",
         tags: ["NestJS", "React", "PostgreSQL", "JavaScript/TypeScript"],
         images: ["./bookshell2.png", "./bookshell3.png"],
         codeLink: "https://github.com/calledarian/library",
@@ -36,7 +36,7 @@ const projectsData = [
         id: 4,
         title: "Norphealey Cafe Shop",
         description:
-            "A visually appealing static website built for a Phnom Penh café. Designed to reflect the brand identity and showcase the café’s menu, style, and location.",
+            "Designed a visually compelling static website to capture the unique brand identity of a Phnom Penh café. The site serves as an attractive digital storefront, showcasing the menu, ambiance, and location to draw in new customers and enhance the café's local profile.",
         tags: ["React", "JavaScript"],
         images: ["./norph.png", "./norph28.png", "./norph29.png"],
         codeLink: "https://github.com/calledarian/norph",
@@ -46,8 +46,8 @@ const projectsData = [
         id: 5,
         title: "Gospel For Youths",
         description:
-            "A full-featured gospel content platform tailored for young audiences. Includes a CMS for blog and video content, admin dashboard, and dynamic front-end pages.",
-        tags: ["React", "NestJS", "Claudinary", "PostgreSQL", "JavaScript/TypeScript"],
+            "Engineered a dynamic content platform for young audiences, complete with a custom-built Content Management System (CMS). The system empowers administrators to manage blog posts and video content independently, fostering direct and consistent engagement with their community.",
+        tags: ["React", "NestJS", "Cloudinary", "PostgreSQL", "JavaScript/TypeScript"],
         images: ["./gospel28.png", "./gospel29.png"],
         codeLink: "https://github.com/calledarian/GospelForYouths-backend",
         liveDemo: "https://gospelforyouths.vercel.app/",
@@ -56,8 +56,8 @@ const projectsData = [
         id: 6,
         title: "Tour Booking Webapp",
         description:
-            "A tour booking platform with a public form, spam protection, and admin dashboard. Admins can manage bookings, confirm or decline requests, and create tour packages with image uploads. Includes booking limits, secure login, and a clean, responsive interface.",
-        tags: ["React", "NestJS", "Claudinary", "PostgreSQL", "JavaScript/TypeScript"],
+            "Automated the client booking process for a local tour guide by building a secure, full-stack platform. It features robust admin controls for managing tour packages, booking confirmations, and user requests, while incorporating spam protection and secure authentication to ensure data integrity.",
+        tags: ["React", "NestJS", "Cloudinary", "PostgreSQL", "JavaScript/TypeScript"],
         images: ["./ramboda31.png", "./ramboda30.png", "./ramboda29.png", "./Ramboda28.png", "RAMBODA27.png"],
         codeLink: "https://github.com/calledarian/tour-frontend",
         liveDemo: "https://rambodatour.vercel.app/",

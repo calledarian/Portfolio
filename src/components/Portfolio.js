@@ -7,7 +7,7 @@ export default function Portfolio() {
         <div id='portfolioo'>
             <header className="header">
                 <div className="header-content">
-                    <h1 className="logo">Developer</h1>
+                    <h1 className="logo"> Software Developer</h1>
                     <p className="date-text">
                         {new Date().getFullYear()} / {new Date().getMonth() + 1} / {new Date().getDate()}
                     </p>
