@@ -1,83 +1,252 @@
-.resume-container {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* resume-improved.css */
+
+/* 1. ROOT & VARIABLES 
+   ========================================================================== */
+/* Centralizing control for colors, fonts, and spacing. 
+   Makes future updates (like adding a dark mode) trivial. */
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --text-color: #333;
+  --text-light: #555;
+  --border-color: #e0e0e0;
+  --background-color: #fff;
+  --page-background: #f7f7f7;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --spacing-base: 1.25rem; /* 20px */
 }
 
-.resume-header h1 {
+/* 2. MODERN RESET & BODY DEFAULTS
+   ========================================================================== */
+/* A simple reset for consistency across browsers. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-size: 32px;
-  font-weight: bold;
+  padding: 0;
 }
 
-.title {
-  font-size: 18px;
-  margin-top: 4px;
+body {
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  background-color: var(--page-background);
+  line-height: 1.6;
 }
 
-.contact-info p {
-  margin: 4px 0;
-  font-size: 14px;
+a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
-.resume-section {
-  margin-top: 20px;
-}
-
-.resume-section h2 {
-  font-size: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 4px;
+a:hover {
+  text-decoration: underline;
 }
 
 ul {
-  padding-left: 20px;
+  list-style-position: inside;
+  padding-left: 0; /* Let list items handle their own padding */
 }
 
-ul li {
-  margin-bottom: 6px;
+/* 3. LAYOUT & CONTAINER
+   ========================================================================== */
+.resume-container {
+  max-width: 900px;
+  margin: var(--spacing-base) auto;
+  padding: calc(var(--spacing-base) * 1.5); /* 30px */
+  background: var(--background-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  border-radius: 8px;
 }
 
 .columns-container {
   display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
   justify-content: space-between;
-  gap: 20px;
+  gap: var(--spacing-base);
+  margin-top: var(--spacing-base);
 }
 
-.language-list, .tech-list {
-  list-style: square;
+/* 4. COMPONENT STYLES
+   ========================================================================== */
+.resume-header h1 {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 
-.experience-item, .project-item {
-  margin-top: 12px;
+.resume-header .title {
+  font-size: 1.125rem; /* 18px */
+  color: var(--text-light);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-size: 0.9rem; /* ~14px */
+  margin-bottom: 0.25rem;
+}
+
+.resume-section {
+  margin-top: var(--spacing-base);
+}
+
+.resume-section h2 {
+  font-size: 1.25rem; /* 20px */
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-list li,
+.language-list li {
+  list-style-type: square;
+  margin-bottom: 0.5rem;
+}
+
+.project-item,
+.experience-item {
+  margin-top: 1.25rem;
+}
+
+.project-item ul,
+.experience-item ul {
+  padding-left: 1.25rem; /* Indent lists within sections */
+  margin-top: 0.5rem;
+}
+
+.project-item li,
+.experience-item li {
+  margin-bottom: 0.5rem;
 }
 
 .experience-header {
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
+  align-items: baseline;
+  font-weight: 600;
+}
+
+.experience-header h3 {
+  font-size: 1rem;
+}
+
+.experience-header .date {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Footer & Download Button */
+.resume-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: calc(var(--spacing-base) * 1.5);
+  padding-top: var(--spacing-base);
+  border-top: 1px solid var(--border-color);
 }
 
 .download-button {
-  background-color: #007bff;
-  color: white;
-  padding: 6px 10px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.6rem 1rem;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
 }
 
 .download-button:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-hover);
+  text-decoration: none; /* Remove underline on hover for buttons */
 }
 
-.no-print {
-  margin-top: 20px;
+.download-button:active {
+  transform: scale(0.98);
+}
+
+/* ==========================================================================
+   5. ULTRA-COMPACT PRINT STYLES (Final Squeeze for Single Page)
+   ========================================================================== */
+@media print {
+  /* FINAL SQUEEZE: Smallest readable font size and very tight line height */
+  body {
+    background-color: var(--background-color);
+    font-size: 9pt; /* Reduced from 9.5pt */
+    line-height: 1.25; /* Reduced from 1.35 */
+  }
+
+  /* Hide non-printable elements */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Remove shadows and borders for a flat, clean print look */
+  .resume-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  /* Use the full page width and remove any screen transforms */
+  .print-wrapper {
+    width: 100%;
+    transform: none;
+  }
+  
+  /* FINAL SQUEEZE: Minimal spacing between ALL elements */
+  .resume-section,
+  .columns-container,
+  .project-item,
+  .experience-item {
+    margin-top: 0.6rem; 
+  }
+
+  .resume-header h1 {
+    margin-bottom: 0.1rem; /* Tighten space after name */
+  }
+  .resume-header .title {
+    margin-bottom: 0.6rem; /* Tighten space after title */
+  }
+
+  /* FINAL SQUEEZE: Almost no space below section titles */
+  .resume-section h2 {
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.2rem;
+  }
+
+  /* FINAL SQUEEZE: Minimal space between list items */
+  .project-item ul,
+  .experience-item ul {
+    margin-top: 0.2rem;
+  }
+  .project-item li,
+  .experience-item li,
+  .tech-list li,
+  .language-list li {
+    margin-bottom: 0.15rem;
+  }
+
+  /* Make links look like normal text in print */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* FINAL SQUEEZE: Tighter page margins */
+  @page {
+    size: A4;
+    margin: 1.2cm; /* Reduced from 1.5cm */
+  }
 }

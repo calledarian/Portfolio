@@ -2,34 +2,11 @@
 import { Link } from 'react-router-dom';
 import { Download } from 'lucide-react';
 import '../Resume.css';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+
 
 function Resume() {
-    const handleDownload = async () => {
-        const element = document.querySelector('.print-wrapper');
-
-        if (!element) return;
-
-        const canvas = await html2canvas(element, {
-            scale: 2,
-            useCORS: true,
-        });
-
-        const imgData = canvas.toDataURL('image/png');
-
-        const pdf = new jsPDF({
-            orientation: 'portrait',
-            unit: 'mm',
-            format: 'a4',
-        });
-
-        const imgProps = pdf.getImageProperties(imgData);
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-        pdf.save('Arian_Khadem_Resume.pdf');
+    const handleDownload = () => {
+        window.print();
     };
     const currentYear = new Date().getFullYear();
     const age = currentYear - 2008;
@@ -45,7 +22,7 @@ function Resume() {
                         <p>Email: <a href="mailto:ariankhadem4@gmail.com">ariankhadem4@gmail.com</a></p>
                         <p>Telegram: <a href="https://t.me/calledarian" target="_blank" rel="noopener noreferrer">t.me/calledarian</a></p>
                         <p>LinkedIn: <a href="https://linkedin.com/in/ariankhadem" target="_blank" rel="noopener noreferrer">linkedin.com/in/ariankhadem</a></p>
-                        <p>Website: <a href='https://ariankhadem.vercel.app/' target='_blank' rel='noopener noreferrer'>ariankhade.vercel.app</a></p>
+                        <p>Website: <a href='https://ariankhadem.vercel.app/' target='_blank' rel='noopener noreferrer'>https://ariankhadem.vercel.app</a></p>
                     </div>
                 </header>
 
