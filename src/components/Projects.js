@@ -4,13 +4,13 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 const projectsData = [
     {
         id: 1,
-        title: "Bible Education Center",
+        title: "Tour Booking Webapp",
         description:
-            "Developed a full-stack educational platform to serve as a high-performance, centralized hub for BEC's activities. The application empowers administrators to seamlessly manage events and content through a secure dashboard, enhancing the organization's outreach and user engagement.",
-        tags: ["React", "NestJS", "PostgreSQL", "Cloudinary", "JavaScript/TypeScript"],
-        images: ["./bec.png", "./bec28.png"],
-        codeLink: "https://github.com/calledarian/my-ecclesia-website",
-        liveDemo: "https://bibleec.vercel.app/",
+            "Automated the client booking process for a local tour guide by building a secure, full-stack platform. It features robust admin controls for managing tour packages, booking confirmations, and user requests, while incorporating spam protection and secure authentication to ensure data integrity.",
+        tags: ["React", "NestJS", "Cloudinary", "PostgreSQL", "JavaScript/TypeScript"],
+        images: ["./ramboda31.png", "./ramboda30.png", "./ramboda29.png", "./Ramboda28.png", "RAMBODA27.png"],
+        codeLink: "https://github.com/calledarian/tour-frontend",
+        liveDemo: "https://rambodatour.vercel.app/",
     },
     {
         id: 2,
@@ -44,23 +44,13 @@ const projectsData = [
     },
     {
         id: 5,
-        title: "Gospel For Youths",
+        title: "Bible Education Center",
         description:
-            "Engineered a dynamic content platform for young audiences, complete with a custom-built Content Management System (CMS). The system empowers administrators to manage blog posts and video content independently, fostering direct and consistent engagement with their community.",
-        tags: ["React", "NestJS", "Cloudinary", "PostgreSQL", "JavaScript/TypeScript"],
-        images: ["./gospel28.png", "./gospel29.png"],
-        codeLink: "https://github.com/calledarian/GospelForYouths-backend",
-        liveDemo: "https://gospelforyouths.vercel.app/",
-    },
-    {
-        id: 6,
-        title: "Tour Booking Webapp",
-        description:
-            "Automated the client booking process for a local tour guide by building a secure, full-stack platform. It features robust admin controls for managing tour packages, booking confirmations, and user requests, while incorporating spam protection and secure authentication to ensure data integrity.",
-        tags: ["React", "NestJS", "Cloudinary", "PostgreSQL", "JavaScript/TypeScript"],
-        images: ["./ramboda31.png", "./ramboda30.png", "./ramboda29.png", "./Ramboda28.png", "RAMBODA27.png"],
-        codeLink: "https://github.com/calledarian/tour-frontend",
-        liveDemo: "https://rambodatour.vercel.app/",
+            "Developed a full-stack educational platform to serve as a high-performance, centralized hub for BEC's activities. The application empowers administrators to seamlessly manage events and content through a secure dashboard, enhancing the organization's outreach and user engagement.",
+        tags: ["React", "NestJS", "PostgreSQL", "Cloudinary", "JavaScript/TypeScript"],
+        images: ["./bec.png", "./bec28.png"],
+        codeLink: "https://github.com/calledarian/my-ecclesia-website",
+        liveDemo: "https://bibleec.vercel.app/",
     },
 ];
 

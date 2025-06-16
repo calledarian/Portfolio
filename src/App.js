@@ -1,5 +1,3 @@
-// Portfolio.js
-import React from 'react';
 import './App.css'
 import Portfolio from './components/Portfolio';
 import About from './components/About';

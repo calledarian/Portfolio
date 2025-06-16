@@ -1,46 +1,10 @@
-/* Tech Stack Styling with Enhanced Hover Effects */
 
-
-
-/* Base styling for the skills section */
-.skills-section {
-    padding: 5rem 1rem;
-    background-color: #f8f9fa;
-  }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  /* Enhanced skill card with hover effects */
-  .skill-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 1px solid transparent;
-  }
-  
   .skill-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(37, 99, 235, 0.15);
     border-color: rgba(37, 99, 235, 0.1);
   }
   
-  .skill-title {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 2px solid #e5e7eb;
-    font-weight: 600;
-    color: #1f2937;
-    transition: all 0.3s ease;
-  }
   
   .skill-card:hover .skill-title {
     color: #2563eb;
@@ -64,9 +28,7 @@
     display: flex;
     align-items: center;
     padding: 12px 16px;
-    background-color: #f9fafb;
     border-radius: 8px;
-    color: #4b5563;
     text-decoration: none;
     transition: all 0.3s ease;
     border: 1px solid #f3f4f6;
@@ -107,21 +69,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 8px;
+    width: 60px;
+    height: 60px;
     margin-right: 12px;
     font-size: 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    border: 1px solid #f3f4f6;
     transition: all 0.3s ease;
     z-index: 2;
   }
   
   .tech-icon i {
-    color: #2563eb;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
   }
   
