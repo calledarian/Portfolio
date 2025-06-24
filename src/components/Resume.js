@@ -75,24 +75,6 @@ function Resume() {
                             <li> Designed for a Southeast Asia-based local guide and deployed to production.</li>
                         </ul>
                     </div>
-
-                    <div className="project-item">
-                        <h3>Personal Library Manager</h3>
-                        <p><strong>Tech:</strong> React, NestJS, PostgreSQL</p>
-                        <ul>
-                            <li>Streamlined personal book management, improving organization and accessibility for 100+ titles.</li>
-                        </ul>
-                    </div>
-
-                    <div className="project-item">
-                        <h3>Bible Storytelling Platform</h3>
-                        <p><strong>Tech:</strong> React, NestJS, PostgreSQL, Cloudinary</p>
-                        <ul>
-                            <li>Built a storytelling site for youth using React and NestJS. </li>
-                            <li>Added user comment and Q&A features to boost engagement. </li>
-                            <li>Designed for ease of use by teens learning Bible stories online and used in Sunday school classes.</li>
-                        </ul>
-                    </div>
                 </section>
 
                 {/* Experience */}
@@ -109,30 +91,31 @@ function Resume() {
                             <li>Managed the complete software development lifecycle, including designing frontend and backend architectures, coding, deploying to production environments, and providing ongoing maintenance and support.</li>
                         </ul>
                     </div>
+                </section>
+
+                {/* Education */}
+                <section className="resume-section">
+                    <h2>Education</h2>
 
                     <div className="experience-item">
-                        <div className="experience-header">
-                            <h3>Bible Education Centre & CSP Cambodia</h3>
-                            <span className="date">Sep 2024 – Present</span>
-                        </div>
-                        <ul>
-                            <li>Maintained internal tools and websites for BEC & Sustainability Project.</li>
-                            <li>Developed a basic cattle tracking system for the farm, improving data organization and facilitating easy management of cattle records.</li>
-                            <li>Supported farm tasks and educational activities such as teaching English through Bible in Phnom Penh.</li>
-                        </ul>
+                        <h3>CS50x – Harvard University</h3>
+                        <p><strong>Type:</strong> Online Course, Computer Science</p>
+                        <span className="date">Jun 2025 – Aug 2025</span>
                     </div>
 
                     <div className="experience-item">
-                        <div className="experience-header">
-                            <h3>Real Estate Agent</h3>
-                            <span className="date">Aug 2023 – Sep 2023</span>
-                        </div>
-                        <ul>
-                            <li>Leveraged multilingual skills to act as an interpreter and agent for Persian property owners in Türkiye.</li>
-                            <li>Successfully closed 3 deals and managed property listings on Telegram, facilitating transactions with local buyers.</li>
-                        </ul>
+                        <h3>Khan Academy – Web Programming</h3>
+                        <p><strong>Type:</strong> Online Course, Computer Programming & Web Development</p>
+                        <span className="date">Dec 2024 – Feb 2025</span>
+                    </div>
+
+                    <div className="experience-item">
+                        <h3>Postman - API Fundamentals Student Expert certification</h3>
+                        <p><strong>Type:</strong> Online Course, API Fundamentals </p>
+                        <span className="date">Jun 2025</span>
                     </div>
                 </section>
+
 
                 {/* Footer */}
                 <footer className="resume-footer no-print">
