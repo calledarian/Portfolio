@@ -30,8 +30,7 @@ function Resume() {
                 <section className="resume-section">
                     <h2>Summary</h2>
                     <p>
-                        Self-taught full-stack developer with a focus on scalable backend logic, intuitive UI design, and strong database architecture. Delivered 5+ full CRUD applications, improving client workflows, user engagement, and system reliability.
-
+                        Self-taught full-stack developer currently interning in a real-world team. Focused on backend logic, clean UIs, and solid database design.
                     </p>
                 </section>
 
@@ -72,67 +71,65 @@ function Resume() {
                             <li>Developed a tour booking app using React, NestJS, and PostgreSQL.</li>
                             <li>Enabled public tour reservations and admin confirmations through a secure dashboard.</li>
                             <li>Implemented robust security measures (rate limiting, session-based JWT auth, honeypots, reCAPTCHA, bcrypt, Helmet) to protect against common web vulnerabilities and ensure secure user interactions.</li>
-                            <li> Designed for a Southeast Asia-based local guide and deployed to production.</li>
-                        </ul>
-                    </div>
-
-                    <div className="project-item">
-                        <h3>Personal Library Manager</h3>
-                        <p><strong>Tech:</strong> React, NestJS, PostgreSQL</p>
-                        <ul>
-                            <li>Streamlined personal book management, improving organization and accessibility for 100+ titles.</li>
-                        </ul>
-                    </div>
-
-                    <div className="project-item">
-                        <h3>Bible Storytelling Platform</h3>
-                        <p><strong>Tech:</strong> React, NestJS, PostgreSQL, Cloudinary</p>
-                        <ul>
-                            <li>Built a storytelling site for youth using React and NestJS. </li>
-                            <li>Added user comment and Q&A features to boost engagement. </li>
-                            <li>Designed for ease of use by teens learning Bible stories online and used in Sunday school classes.</li>
+                            <li>Designed for a Southeast Asia-based local guide and deployed to production.</li>
                         </ul>
                     </div>
                 </section>
 
                 {/* Experience */}
+
                 <section className="resume-section">
                     <h2>Experience</h2>
 
                     <div className="experience-item">
                         <div className="experience-header">
+                            <h3>Software Developer Intern</h3>
+                            <span className="date">(Web Essentials Co., Ltd.) July 2025 – Current</span>
+                        </div>
+                        <ul>
+                            <li>Contributing to real client projects by developing features and fixing bugs as needed.</li>
+                            <li>Improving problem-solving skills by working through real-world technical challenges.</li>
+                            <li>Collaborating with team members and participating in meetings to strengthen communication skills.</li>
+                            <li>Actively learning and adapting to new tools, workflows, and project requirements.</li>
+                        </ul>
+                    </div>
+
+
+                    <div className="experience-item">
+                        <div className="experience-header">
                             <h3>Freelance Developer</h3>
-                            <span className="date">Dec 2024 – Present</span>
+                            <span className="date">Dec 2024 – July 2025</span>
                         </div>
                         <ul>
                             <li>Successfully developed and delivered over 5 production-ready web applications to diverse clients, implementing custom features that resolved specific business challenges and improved operational workflows.</li>
                             <li>Managed the complete software development lifecycle, including designing frontend and backend architectures, coding, deploying to production environments, and providing ongoing maintenance and support.</li>
                         </ul>
                     </div>
+                </section>
+
+                {/* Education */}
+                <section className="resume-section">
+                    <h2>Education</h2>
 
                     <div className="experience-item">
-                        <div className="experience-header">
-                            <h3>Bible Education Centre & CSP Cambodia</h3>
-                            <span className="date">Sep 2024 – Present</span>
-                        </div>
-                        <ul>
-                            <li>Maintained internal tools and websites for BEC & Sustainability Project.</li>
-                            <li>Developed a basic cattle tracking system for the farm, improving data organization and facilitating easy management of cattle records.</li>
-                            <li>Supported farm tasks and educational activities such as teaching English through Bible in Phnom Penh.</li>
-                        </ul>
+                        <h3>CS50x – Harvard University</h3>
+                        <p><strong>Type:</strong> Online Course, Computer Science</p>
+                        <span className="date">Jun 2025 – Aug 2025</span>
                     </div>
 
                     <div className="experience-item">
-                        <div className="experience-header">
-                            <h3>Real Estate Agent</h3>
-                            <span className="date">Aug 2023 – Sep 2023</span>
-                        </div>
-                        <ul>
-                            <li>Leveraged multilingual skills to act as an interpreter and agent for Persian property owners in Türkiye.</li>
-                            <li>Successfully closed 3 deals and managed property listings on Telegram, facilitating transactions with local buyers.</li>
-                        </ul>
+                        <h3>Khan Academy – Web Programming</h3>
+                        <p><strong>Type:</strong> Online Course, Computer Programming & Web Development</p>
+                        <span className="date">Dec 2024 – Feb 2025</span>
+                    </div>
+
+                    <div className="experience-item">
+                        <h3>Postman - API Fundamentals Student Expert certification</h3>
+                        <p><strong>Type:</strong> Online Course, API Fundamentals </p>
+                        <span className="date">Jun 2025</span>
                     </div>
                 </section>
+
 
                 {/* Footer */}
                 <footer className="resume-footer no-print">
